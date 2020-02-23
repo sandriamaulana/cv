@@ -1,0 +1,181 @@
+.container{
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 98.5%;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+
+.header h1{
+    color: white;
+    padding-top: 50px;
+}
+
+hr{
+    border-top: 3px solid white;
+    width: 350px;
+}
+.header{
+    background-color: #0B3049;
+    color: white;
+}
+
+.img-style{
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data{
+    background-color: #0B3049;
+}
+
+.data-diri{
+    margin-left: -15px;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    height: 35px;
+    width: 250px;
+    position: relative;
+}
+
+.data-diri::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: -1px;
+    width: 1%;
+    bottom: 0;
+    border-bottom: 35px solid #0B3049;
+    border-left: 35px solid transparent;
+    border-width: 15px;
+    right: 0;
+}
+
+.data-diri-field{
+    color: white;
+    margin-top:20px;
+}
+.loading {
+    background-color: white;
+    height: 12px;
+    margin-top: -4px;
+}
+
+/* effect slide form left*/
+@keyframes slideLoading {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+
+
+.loading::after{
+    content: '';
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background-color: yellow;
+    animation: 1s ease-out 0s 1 slideLoading;
+}
+
+.keahlian-lain {
+    color: white;
+    margin-top: 20px;
+}
+
+.keahlian-modif, li{
+    margin-top: 1px;
+}
+
+.pendidikan h1{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.pengalaman{
+    margin-top: 30x;
+}
+
+.pengalaman h1{
+    font-size: 30px;
+}
+
+.prestasi h1{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.pengenalan{
+    background-color: #0B3049;
+    height: 180px;
+    color: white;
+    text-align: center;
+}
+.pengenalan h4{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.detail-prestasi ul{
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) { 
+    hr{
+        border-top: 3px solid white;
+        width: 500px;
+    }
+
+    .img-style{
+        width: 170px;
+        height: 170px;
+        margin-left: 50px;
+        margin-top: 1px;
+    }
+    .pengenalan{
+        background-color: #0B3049;
+        height: 180px;
+        color: white;
+        text-align: left;
+    }
+    .pengenalan h4{
+        padding-top: 30px;
+        text-align: left;
+    }
+
+    .pendidikan h1{
+        margin-top: 150px;
+        font-size: 2em;
+    }
+    
+    .pengalaman h1{
+        margin-top: 50px;
+        font-size: 2em;
+    }
+    
+    .prestasi h1{
+        margin-top: 50px;
+        font-size: 2em;
+    }
+
+    .container{
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

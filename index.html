@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <audio controls autoplay loop>
-        <source src="westlife.mp3" type="audio/mpeg">
-    </audio>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,10 +13,12 @@
     <link rel="stylesheet" href="css/effect.css">
 
     <title>For Nisa</title>
-
 </head>
 
 <body>
+    <audio controls autoplay>
+        <source src="westlife.mp3" type="audio/mp3">
+    </audio>
     <div class="container">
         <div class="text">
             <br>
@@ -27,7 +26,6 @@
             <center>
                 <h3>Hallo Nisa</h3>
             </center>
-            <br>
             <p>Pertama-tama aku ingin ngasih tau bahwa aku tidak ahli dalam merangkai kata, jadi mohon di maklum ya jika
                 tulisannya
                 berantakan haha. tapi semoga pesan yang ingin aku sampaikan bisa tersampaikan dengan baik ya...
@@ -57,9 +55,6 @@
 
     </div>
 
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -72,6 +67,10 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- <script src="js/effect.js"></script> -->
+    <script>
+        let sound = document.getElementById("audioId"); //if you want it to restart playing automatically when it ends
+        sound.play();
+    </script>
 </body>
 
 </html>
